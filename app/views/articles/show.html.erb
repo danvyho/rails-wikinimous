@@ -1,0 +1,10 @@
+<%= link_to 'wikinimous', home_path%>
+<%= link_to 'Edit', edit_path%>
+<%= link_to "Delete",article_path(@articles),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+<h1> Article Page </h1>
+
+<h1><%= @articles.title%></h1>
+<h2><%= @articles.content%></h2>
+
+<%= @articles.content %>
